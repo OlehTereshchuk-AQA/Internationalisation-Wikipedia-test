@@ -48,4 +48,4 @@ docker build -t internationalisation-wikipedia-test .
 <pre>
 docker run --rm -v ${PWD}/playwright-report:/app/playwright-report internationalisation-wikipedia-test
 </pre>
-
+6. The report is located in the "playwright-report" folder.
