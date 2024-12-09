@@ -27,7 +27,7 @@ Verify that all elements of the interface (menus, buttons, labels, etc.) are cor
 
 1. Start by cloning the project from GitHub using the following git clone command:
 <pre>
-https://github.com/OlehTereshchuk-AQA/Internationalisation-Wikipedia-test.git
+git clone https://github.com/OlehTereshchuk-AQA/Internationalisation-Wikipedia-test.git
 </pre>
 2. In the root directory, create a file named .env and enter valid authentication data using the environment variables WIKIUSERNAME and WIKIPASSWORD. Provide an example:
 <pre>
