@@ -46,7 +46,7 @@ docker build -t internationalisation-wikipedia-test .
 </pre>
 5. After creating the container, execute the following command to run the created image:
 <pre>
-docker run -it --rm internationalisation-wikipedia-test
+docker run --rm -v ${PWD}/playwright-report:/app/playwright-report internationalisation-wikipedia-test
 </pre>
 6. Once inside the container, enter the command to run the test:
 <pre>
