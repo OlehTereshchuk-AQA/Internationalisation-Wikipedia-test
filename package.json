@@ -12,6 +12,8 @@
   },
   "scripts": {
     "test": "playwright test tests/wikiPreferencesSettings.spec.js --project=chromium --reporter=html --headed"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7"
   }
 }
-

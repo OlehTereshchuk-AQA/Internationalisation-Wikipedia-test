@@ -2,7 +2,7 @@
 const { test, expect } = require('@playwright/test');
 const { PreferencesPage } = require('../pageObjects/PreferencesPage');
 
-test.only('wikiLanguageChange', async ({ page }) => {
+test('wikiLanguageChange', async ({ page }) => {
   const preferencesPage = new PreferencesPage(page);
 
   //Auhorization
@@ -17,18 +17,7 @@ test.only('wikiLanguageChange', async ({ page }) => {
   console.log(currentLanguage);
 
   //Change language
-  if(currentLanguage === 'uk - українська') {
-    await preferencesPage.chooseEnglishLanguage();
-  } else {
-    await preferencesPage.chooseUkrainianLanguage();
-  }
-
-
-
-
-
-
-
+  await preferencesPage.changeLanguage();
 
 
 

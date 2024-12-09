@@ -1,8 +1,5 @@
-// const username = process.env.WIKIUSERNAME;
-// const password = process.env.WIKIPASSWORD;
-
-const username = "Slash1710";
-const password = "Slash2022013QA";
+const username = process.env.WIKIUSERNAME;
+const password = process.env.WIKIPASSWORD;
 
 class Main {
     constructor(page) {
@@ -19,6 +16,7 @@ class Main {
     async preferencesOpen(){
         await this.page.locator('#vector-user-links-dropdown').click();
         await this.page.locator('#pt-preferences').click();
+        await this.page.waitForSelector('.firstHeading.mw-first-heading');
     }
 
     async waitForElementByText(text, counter = 30) {
