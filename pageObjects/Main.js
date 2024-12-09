@@ -30,7 +30,6 @@ class Main {
         return isPresented
     }
 
-
 }
 
 module.exports = { Main };
