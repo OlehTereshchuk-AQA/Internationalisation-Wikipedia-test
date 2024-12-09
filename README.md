@@ -48,11 +48,4 @@ docker build -t internationalisation-wikipedia-test .
 <pre>
 docker run --rm -v ${PWD}/playwright-report:/app/playwright-report internationalisation-wikipedia-test
 </pre>
-6. Once inside the container, enter the command to run the test:
-<pre>
-npx playwright test
-</pre>
-7. To exit the container, type:
-<pre>
-exit
-</pre>
+
