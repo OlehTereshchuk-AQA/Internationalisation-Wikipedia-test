@@ -29,26 +29,30 @@ Verify that all elements of the interface (menus, buttons, labels, etc.) are cor
 <pre>
 git clone https://github.com/OlehTereshchuk-AQA/Internationalisation-Wikipedia-test.git
 </pre>
-2. In the root directory, create a file named .env and enter valid authentication data using the environment variables WIKIUSERNAME and WIKIPASSWORD. Provide an example:
+2. Navigate to the root folder and run the command npm install.
+<pre>
+npm install
+</pre>
+3. In the root directory, create a file named .env and enter valid authentication data using the environment variables WIKIUSERNAME and WIKIPASSWORD. Provide an example:
 <pre>
 # File: .env
 # Environment variables for authentication in Wikipedia test
 WIKIUSERNAME=your_username
 WIKIPASSWORD=your_password
 </pre>
-3. Build the Docker image with the following command in the terminal:
+4. Build the Docker image with the following command in the terminal:
 <pre>
-docker build -t wikipedia-test-image .
+docker build -t internationalisation-wikipedia-test .
 </pre>
-4. After creating the container, execute the following command to run the created image:
+5. After creating the container, execute the following command to run the created image:
 <pre>
-docker run -it --rm wikipedia-test-image
+docker run -it --rm internationalisation-wikipedia-test
 </pre>
-5. Once inside the container, enter the command to run the test:
+6. Once inside the container, enter the command to run the test:
 <pre>
 npx playwright test
 </pre>
-6. To exit the container, type:
+7. To exit the container, type:
 <pre>
 exit
 </pre>
