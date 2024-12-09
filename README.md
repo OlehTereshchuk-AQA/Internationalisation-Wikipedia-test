@@ -32,6 +32,7 @@ git clone https://github.com/OlehTereshchuk-AQA/Internationalisation-Wikipedia-t
 2. Navigate to the root folder and run the command npm install.
 <pre>
 npm install
+npm install dotenv
 </pre>
 3. In the root directory, create a file named .env and enter valid authentication data using the environment variables WIKIUSERNAME and WIKIPASSWORD. Provide an example:
 <pre>
