@@ -1,0 +1,17 @@
+{
+  "name": "nuxgame-test-task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.49.0",
+    "@types/node": "^22.10.1"
+  },
+  "scripts": {
+    "test": "playwright test tests/wikiPreferencesSettings.spec.js --project=chromium --reporter=html --headed"
+  }
+}
+
